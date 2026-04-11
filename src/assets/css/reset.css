@@ -1,0 +1,278 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4b5b3f;
+  letter-spacing: -0.01em;
+  word-break: break-all;
+  word-wrap: break-word;
+  line-height: 1.2;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+body,
+header,
+footer,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+form,
+fieldset,
+table,
+tr,
+th,
+td,
+a,
+input,
+span,
+section,
+article,
+textarea,
+figure {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img,
+fieldset {
+  border: none;
+  vertical-align: top;
+}
+
+em {
+  font-style: normal;
+}
+
+legend,
+caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+}
+
+textarea,
+button {
+  vertical-align: middle;
+  font-family: "Pretendard", sans-serif;
+}
+
+textarea {
+  color: #222;
+  resize: none;
+  overflow-y: auto;
+  -ms-overflow-style: auto;
+}
+
+select {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  vertical-align: middle;
+  letter-spacing: -0.75px;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input,
+textarea {
+  font-family: "Pretendard", sans-serif;
+  vertical-align: middle;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+option {
+  padding: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  padding: 0;
+  height: auto;
+  font-size: 18px;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="text"]::-ms-clear {
+  display: none;
+}
+
+input::-webkit-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+}
+
+input::-ms-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+}
+
+input::placeholder {
+  font-family: "Pretendard", sans-serif;
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+}
+
+textarea:-ms-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+}
+
+textarea::-ms-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+}
+
+textarea::placeholder {
+  font-family: "Pretendard", sans-serif;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+button {
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+  position: relative;
+}

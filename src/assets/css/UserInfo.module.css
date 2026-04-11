@@ -1,0 +1,60 @@
+/* info */
+.info .form-wrap .form-item {
+  padding: 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(241, 255, 231, 0) 0%,
+    rgba(214, 254, 184, 1) 100%
+  );
+  border-radius: 16px;
+  box-shadow: 4px 7px 10px rgba(148, 176, 127, 0.1);
+  border: 1px solid #94b07f;
+  text-align: center;
+}
+
+.info .form-wrap .form-item + .form-item {
+  margin-top: 20px;
+}
+
+.info .form-wrap .form-item label {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+}
+
+.info .form-wrap .form-item label span {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.info .form-wrap .form-item label span::before {
+  content: "★";
+  font-size: 10px;
+}
+
+.info .form-wrap .form-item input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 5px 0;
+  border-bottom: 1px solid #94b07f;
+  text-align: center;
+  color: #4b5b3f;
+}
+
+.info .form-wrap .form-item input::placeholder {
+  text-align: center;
+  color: #70875f;
+}
+
+.info .form-wrap .form-item input:focus-visible {
+  border-radius: 2px;
+  border: none;
+  outline: 2px solid #596b4c;
+}
+
+.info .form-wrap .form-item .notice {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #70875f;
+}
