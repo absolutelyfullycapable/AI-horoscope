@@ -1,6 +1,6 @@
 function getZodiac(birthData) {
-  const month = Number(birthData.slice(4, 6));
-  const day = Number(birthData.slice(6, 8));
+  const month = Number(birthData.slice(2, 4));
+  const day = Number(birthData.slice(4, 6));
 
   switch (month) {
     case 1:

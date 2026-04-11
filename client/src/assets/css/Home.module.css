@@ -7,3 +7,9 @@
 .home h2 img {
   width: 100%;
 }
+
+@media all and (max-width: 600px) {
+  .home h2 {
+    max-width: 300px;
+  }
+}

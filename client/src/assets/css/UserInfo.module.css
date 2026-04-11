@@ -24,6 +24,7 @@
 
 .info .form-wrap .form-item label span {
   display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: 5px;
 }
@@ -49,7 +50,6 @@
 
 .info .form-wrap .form-item input:focus-visible {
   border-radius: 2px;
-  border: none;
   outline: 2px solid #596b4c;
 }
 

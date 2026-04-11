@@ -3,6 +3,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
   padding: 20px 0;
 }
@@ -40,7 +41,7 @@ header .notice {
   font-size: 12px;
 }
 
-header h1:has(a:focus) + .notice,
+header h1:has(a:focus-visible) + .notice,
 header h1:hover + .notice {
   top: 70px;
   opacity: 1;
@@ -56,10 +57,13 @@ header h1:hover + .notice {
 
 /* content */
 .cont section {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* button */
@@ -69,7 +73,8 @@ header h1:hover + .notice {
 
 .btn-wrap .btn {
   display: block;
-  width: 200px;
+  width: fit-content;
+  min-width: 200px;
   margin: 0 auto;
   padding: 10px 15px;
   background: linear-gradient(
@@ -106,4 +111,10 @@ footer {
   font-size: 12px;
   text-align: center;
   color: #94b07f;
+}
+
+@media all and (max-width: 600px) {
+  header .notice {
+    padding: 10px 15px;
+  }
 }
