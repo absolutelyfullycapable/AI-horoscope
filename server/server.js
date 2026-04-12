@@ -11,7 +11,7 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV === "production"
-        ? "https://askstars.vercel.app/"
+        ? "https://askstars.vercel.app"
         : "http://localhost:5173",
   }),
 );
