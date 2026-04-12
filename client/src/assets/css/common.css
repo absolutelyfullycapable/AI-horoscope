@@ -97,6 +97,17 @@ header h1:hover + .notice {
   outline: 2px solid #596b4c;
 }
 
+.btn-wrap.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.btn-wrap.flex .btn {
+  margin: 0;
+}
+
 /* footer */
 footer {
   position: fixed;
@@ -112,5 +123,11 @@ footer {
 @media all and (max-width: 600px) {
   header .notice {
     padding: 10px 15px;
+  }
+
+  .btn-wrap.flex {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 20px;
   }
 }

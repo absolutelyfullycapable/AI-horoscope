@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useSearchParams, Link } from "react-router-dom";
+import html2canvas from "html2canvas";
 
 import getZodiac from "../utils/getZodiac";
 import { askClaude } from "../utils/claudeAPI";
@@ -54,6 +55,18 @@ function Result() {
     ).href,
   };
 
+  // 결과 이미지 저장
+  const resultBoxRef = useRef(null);
+
+  async function handleSave() {
+    const canvas = await html2canvas(resultBoxRef.current);
+    const link = document.createElement("a");
+
+    link.download = `오늘의_${zodiac}_운세.png`;
+    link.href = canvas.toDataURL();
+    link.click();
+  }
+
   useEffect(() => {
     // Claude API 호출
     async function fetchResult() {
@@ -101,8 +114,8 @@ function Result() {
             </div>
           )}
           {result && (
-            <div className="result-area">
-              <div className={resultStyles["result-box"]}>
+            <div className={resultStyles["result-area"]}>
+              <div className={resultStyles["result-box"]} ref={resultBoxRef}>
                 <div className={resultStyles["tit"]}>
                   <img src={zodiacImages[zodiac]} alt={zodiac} />
                 </div>
@@ -111,7 +124,10 @@ function Result() {
                   // line.trim(): 비어 있는 줄은 건너뛰고 내용 있는 줄만 렌더링
                 )}
               </div>
-              <div className="btn-wrap">
+              <div className="btn-wrap flex">
+                <button onClick={handleSave} className="btn">
+                  이미지로 저장하기 📷
+                </button>
                 <Link to="/" className="btn">
                   홈 화면으로 이동하기 🏠
                 </Link>

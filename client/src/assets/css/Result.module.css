@@ -1,4 +1,10 @@
 /* result */
+.loading-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .loading-txt span {
   animation: loadingAni 2.5s infinite linear;
   font-size: 20px;
@@ -91,6 +97,7 @@
 }
 
 @media all and (max-width: 600px) {
+  .result-wrap,
   .result-box {
     width: 100%;
   }
