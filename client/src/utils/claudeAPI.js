@@ -1,5 +1,6 @@
 export async function askClaude(name, zodiac) {
-  const response = await fetch("/api/zodiac", {
+  const baseUrl = import.meta.env.VITE_API_URL || "";
+  const response = await fetch(`${baseUrl}/api/zodiac`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, zodiac }),
