@@ -24,7 +24,7 @@ function UserInfo() {
         <div className={infoStyles["form-wrap"]}>
           <div className={infoStyles["form-item"]}>
             <label htmlFor="userName">
-              <span>너를 뭐라고 부르면 좋을까?</span>
+              <span>너를 어떻게 부르면 좋을까?</span>
             </label>
             <input
               type="text"

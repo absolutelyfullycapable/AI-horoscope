@@ -8,6 +8,28 @@
   width: 100%;
 }
 
+.home > p {
+  position: relative;
+  margin-top: 40px;
+}
+
+.home > p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 102%;
+  height: 10px;
+  transform: translateX(-50%);
+}
+
+.home > p span {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+}
+
 @media all and (max-width: 600px) {
   .home h2 {
     max-width: 300px;

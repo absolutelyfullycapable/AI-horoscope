@@ -67,11 +67,7 @@
 .result-box {
   width: 450px;
   padding: 30px;
-  background: linear-gradient(
-    180deg,
-    rgba(241, 255, 231, 0) 0%,
-    rgba(214, 254, 184, 1) 100%
-  );
+  background: linear-gradient(180deg, #fdfff0 0%, #d6feb8 100%);
   border-radius: 16px;
   box-shadow: 4px 7px 10px rgba(148, 176, 127, 0.1);
   border: 1px solid #94b07f;
