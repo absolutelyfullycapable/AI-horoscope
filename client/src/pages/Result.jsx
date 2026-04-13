@@ -116,6 +116,7 @@ function Result() {
           {result && (
             <div className={resultStyles["result-area"]}>
               <div className={resultStyles["result-box"]} ref={resultBoxRef}>
+                <p className={resultStyles["sub-tit"]}>너의 별자리는...</p>
                 <div className={resultStyles["tit"]}>
                   <img src={zodiacImages[zodiac]} alt={zodiac} />
                 </div>
