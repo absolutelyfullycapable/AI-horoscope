@@ -28,7 +28,7 @@ app.post("/api/zodiac", async (req, res) => {
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 1000,
         messages: [
           {
@@ -53,7 +53,7 @@ app.post("/api/zodiac", async (req, res) => {
     const data = await response.json();
     res.json({ result: data.content[0].text });
   } catch (err) {
-    console.error(err);
+    console.error("에러:", JSON.stringify(data));
     res.status(500).json({ error: "운세를 불러오지 못했어 T.T" });
   }
 });
